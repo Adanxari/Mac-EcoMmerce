@@ -69,7 +69,7 @@ def search(request):
 
 
 def productView(request, myid):
-    # fatch product using id
+    # fatch product from db using id
     prod = product.objects.filter(id=myid)
     return render(request, 'shop/productView.html', {'product': prod[0]})
 
