@@ -11,7 +11,7 @@
                     <strong class="d-inline-block mb-2 text-primary">{{item.title}}</strong>
                     <h3 class="mb-0"></h3>
                     <div class="mb-1 text-muted">{{item.publish_date}}</div>
-                    <p class="card-text mb-auto">{{item.content_one}}</p>
+                    <p class="card-text mb-auto">{{item.content_one|slice:"0:100"}}</p>
                     <a href="blogpost/{{item.post_id}}" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
